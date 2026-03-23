@@ -1,7 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" }
-  ],
+  "functions": {
+    "api/analyze.js": {
+      "memory": 256
+    }
+  },
   "headers": [
     {
       "source": "/api/(.*)",
